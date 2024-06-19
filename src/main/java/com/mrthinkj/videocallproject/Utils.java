@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@AllArgsConstructor
 public class Utils {
     static ObjectMapper objectMapper = new ObjectMapper();
     public static SignalMessage getObject(String message) throws JsonProcessingException {

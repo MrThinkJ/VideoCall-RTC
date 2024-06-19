@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Video Call</title>
+</head>
+<body>
+<div class="container">
+    <h1>A Demo for messaging in WebRTC</h1>
+
+    <h3>
+        Run two instances of this webpage along with the server to test this
+        application.<br> Create an offer, and then send the message. <br>Check
+        the browser console to see the output.
+    </h3>
+
+    <!--WebRTC related code-->
+    <button type="button" class="btn btn-primary" onclick='createOffer()'>Create
+        Offer</button>
+    <input id="messageInput" type="text" class="form-control"
+           placeholder="message">
+    <button type="button" class="btn btn-primary" onclick='sendMessage()'>SEND</button>
+    <!--WebRTC related code-->
+
+</div>
+<div class="footer">This application is intentionally made simple
+    to avoid cluttering with non WebRTC related code.</div>
+<script src="js/script.js"></script>
+</body>
+</html>
