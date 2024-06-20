@@ -1,24 +1,29 @@
-.container {
-    background: rgb(148, 144, 144);
-    margin: 50px auto;
-    max-width: 80%;
+body {
+    background: #525b63;
+}
+
+#selectedVideosContainer, #remoteVideosContainer {
     text-align: center;
-    padding: 2%;
+    background: #525b63;
+    margin: 20px;
 }
 
-button {
-    margin: 1em;
+#remoteView, #selfView {
+    background: #000000;
+    display: inline;
+    height: 360px;
+    width: 480px;
+    margin: 20px;
 }
 
-input {
-    margin-top: 1em;
+.videoElement {
+    background: #525b63;
+    border: 12px solid #303e4a;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-.footer {
-    background: rgb(148, 144, 144);
-    text-align: center;
-    padding: 2%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.videoElement.active {
+    border: 12px solid #FFFFFF;
 }

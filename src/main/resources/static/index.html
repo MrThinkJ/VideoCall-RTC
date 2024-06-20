@@ -15,26 +15,11 @@
     <title>Video Call</title>
 </head>
 <body>
-<div class="container">
-    <h1>A Demo for messaging in WebRTC</h1>
-
-    <h3>
-        Run two instances of this webpage along with the server to test this
-        application.<br> Create an offer, and then send the message. <br>Check
-        the browser console to see the output.
-    </h3>
-
-    <!--WebRTC related code-->
-    <button type="button" class="btn btn-primary" onclick='createOffer()'>Create
-        Offer</button>
-    <input id="messageInput" type="text" class="form-control"
-           placeholder="message">
-    <button type="button" class="btn btn-primary" onclick='sendMessage()'>SEND</button>
-    <!--WebRTC related code-->
-
+<div id="selectedVideosContainer">
+    <video id="remoteView" autoplay playsinline></video>
+    <video id="selfView" autoplay playsinline></video>
 </div>
-<div class="footer">This application is intentionally made simple
-    to avoid cluttering with non WebRTC related code.</div>
+<div id="remoteVideosContainer"></div>
 <script src="js/script.js"></script>
 </body>
 </html>
